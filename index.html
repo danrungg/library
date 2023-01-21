@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		<meta charset="utf-8" />
+		<title>My Library</title>
+		<meta name="description" content="" />
+		<meta name="author" content="" />
+
+		<!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		<!-- <link
+			href="//fonts.googleapis.com/css?family=Raleway:400,300,600"
+			rel="stylesheet"
+			type="text/css"
+		/> -->
+
+		<!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		<link rel="stylesheet" href="css/normalize.css" />
+		<link rel="stylesheet" href="css/skeleton.css" />
+		<link rel="stylesheet" href="/css/style.css" />
+
+		<!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		<link
+			rel="icon"
+			href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📚</text></svg>"
+		/>
+
+		<script src="./js/app.js" defer></script>
+	</head>
+	<body>
+		<!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		<div class="container">
+			<h1>Library</h1>
+
+			<div class="row">
+				<form action="#">
+					<div class="four columns">
+						<label for="bookName">Book Name</label>
+						<input
+							class="u-full-width"
+							type="text"
+							name="bookName"
+							id="bookName"
+							required
+						/>
+					</div>
+					<div class="four columns">
+						<label for="author">Author</label>
+						<input
+							class="u-full-width"
+							type="text"
+							name="author"
+							id="author"
+							required
+						/>
+					</div>
+					<div class="four columns">
+						<label for="readStatus">Status</label>
+						<select
+							name="readStatus"
+							id="readStatus"
+							required
+							class="u-full-width"
+						>
+							<option value="read">Read</option>
+							<option value="notread">Not Read</option>
+						</select>
+					</div>
+					<button class="button-primary">Create</button>
+				</form>
+			</div>
+
+			<div class="row">
+				<table class="u-full-width">
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Author</th>
+							<th>Status</th>
+							<th>Edit</th>
+						</tr>
+					</thead>
+					<tbody></tbody>
+				</table>
+			</div>
+		</div>
+
+		<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	</body>
+</html>

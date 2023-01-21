@@ -1,0 +1,25 @@
+:root {
+	--main-color: crimson;
+}
+
+h1 {
+	margin: 5% 0;
+	color: var(--main-color);
+}
+
+button {
+	padding: 0 16px;
+}
+
+.delete {
+	content: url(/src/images/trash3-fill.svg);
+	cursor: pointer;
+	height: 1.9rem;
+	filter: invert(28%) sepia(85%) saturate(2825%) hue-rotate(343deg)
+		brightness(103%) contrast(100%);
+}
+
+.delete:hover {
+	filter: invert(16%) sepia(60%) saturate(4266%) hue-rotate(353deg)
+		brightness(84%) contrast(90%);
+}
